@@ -1,12 +1,14 @@
-//your JS code here. If required.
-functionName(){
-	alert("functionName");
+function functionName() {
+    alert(arguments.callee.name);
 }
-functionName();
 
-Acciojob()
-	{
-	alert("AccioJob");
-	}
+// Example usage:
+ functionName(); // This will display an alert with "functionN
 
-Acciojob();
+
+function AccioJob(){
+
+	alert(arguments.callee.name);
+}
+
+AccioJob();
